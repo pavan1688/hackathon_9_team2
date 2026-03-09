@@ -14,4 +14,5 @@ Dokcer image versions are updated in manifest file accordingly
 Deloyment using below command to cluster
 " kubectl apply "docker ui"
 
-<img width="1148" height="4964" alt="image" src="https://github.com/user-attachments/assets/2ed0a013-708f-4262-b966-ba934e2ffd7a" />
+<img width="2040" height="5164" alt="image" src="https://github.com/user-attachments/assets/cdebf0c5-2dd1-4b58-9c9e-7b8cf75cdb43" />
+
