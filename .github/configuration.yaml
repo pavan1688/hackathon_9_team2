@@ -1,0 +1,41 @@
+On:
+   push:
+       branches: [ “main” ]
+    Pull_request:
+       branches: [ “main” ]
+
+jobs:
+build:
+   name: Build
+   runs-on : Ubuntu-latest
+steps:
+-       Name: checkout repository
+  uses: actions/checkout@v4
+
+
+Test:
+     name: Test
+     runs-on: Ubuntu-latest
+     needs: build
+     Steps:
+      - name: Run Junit test cases
+        run: npm test
+
+Sonarqube:
+      name: Sonarqube Analysis
+      runs-on: Ubuntu-latest
+      needs: build
+
+Vera_code:
+      name: Scan Vulnerabilities
+      runs-on: Ubuntu-latest
+
+Dockerise:
+     name: containerise
+     runs-on: ubuntu-latest
+
+Deploy:
+    name: Deploy to cluster
+    runs-on: ubuntu-latest
+~
+
